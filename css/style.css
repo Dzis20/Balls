@@ -1,24 +1,9 @@
 body {
     background-color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #fff;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-h2.section-title {
-    font-size: 44px;
-    font-weight: bold;
-    margin-bottom: 60px;
-}
-span.for-title {
-    font-size: 44px;
-    font-weight: bold;
-    margin-bottom: 60px;
 }
 .main {
    position: fixed;
@@ -50,8 +35,7 @@ span.for-title {
     display: block;
     width: 24px;
     height: 24.02px;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
 }
 .ball-1 {
     background: radial-gradient(57.72% 57.65% at 67.45% 39.57%, #FFC000 0%, #F77D1F 86.98%, #FD8F3B 100%);
@@ -78,7 +62,6 @@ span.for-title {
     transform: matrix(-1, 0, 0, 1, 0, 0);
     animation: ball-4 5s ease-in-out infinite;
 }
-
 @keyframes ball-1 {
     from {
       transform: scale(1);
@@ -100,7 +83,6 @@ span.for-title {
       transform: scale(0.2);
     }
 }
-
 @keyframes ball-1-drive {
     from {
       transform: translateY(0)
