@@ -1,0 +1,253 @@
+body {
+    background-color: #e5e5e5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2.section-title {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+span.for-title {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.main {
+   position: fixed;
+   width: 100%;
+   height: 100%; 
+   left: 0;top: 0;bottom: 0;right: 0;
+}
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.block-1 {
+    animation: ball-1-drive 5s ease-in-out infinite;
+}
+.block-2 {
+    animation: ball-2-drive 5s ease-in-out infinite;
+}
+.block-3 {
+    animation: ball-3-drive 5s ease-in-out infinite;
+}
+.block-4 {
+    animation: ball-4-drive 5s ease-in-out infinite;
+}
+.ball {
+    display: block;
+    width: 24px;
+    height: 24.02px;
+    border-radius: 50%;
+    
+}
+.ball-1 {
+    background: radial-gradient(57.72% 57.65% at 67.45% 39.57%, #FFC000 0%, #F77D1F 86.98%, #FD8F3B 100%);
+    box-shadow: 16px 32px 16px rgba(191, 102, 18, 0.2);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: scale(1);
+    animation: ball-1 5s ease-in-out infinite;
+}
+.ball-2 {
+    background: radial-gradient(64.27% 64.2% at 67.45% 39.57%, #928BF2 0%, #6E66DF 72.23%, #8A83EB 100%);
+    box-shadow: 16px 32px 16px rgba(61, 56, 130, 0.2);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    animation: ball-2 5s ease-in-out infinite;
+}
+.ball-3 {
+    background: radial-gradient(57.06% 57.13% at 36.22% 68.55%, #F77D1F 0%, #EE3541 76.27%, #F4987B 100%);
+    box-shadow: 16px 32px 15px rgba(154, 41, 42, 0.15);
+    transform: matrix(0, 1, -1, 0, 0, 0);
+    animation: ball-3 5s ease-in-out infinite;
+}
+.ball-4 {
+    background: radial-gradient(64.27% 64.2% at 67.45% 39.57%, #15A1F0 0%, #007FC7 72.23%, #1FA2ED 100%);
+    box-shadow: 16px 32px 16px rgba(7, 65, 98, 0.2);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    animation: ball-4 5s ease-in-out infinite;
+}
+
+@keyframes ball-1 {
+    from {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.1);
+    }
+    40% {
+        transform: scale(0.6);
+        
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.6);
+    }
+    to {
+      transform: scale(0.2);
+    }
+}
+
+@keyframes ball-1-drive {
+    from {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(60px)
+    }
+    40% {
+        transform: translateY(-60px)
+        
+    }
+    60% {
+        transform: translateY(60px)
+    }
+    80% {
+        transform: translateY(-60px)
+    }
+    to {
+      transform: translateY(60px)
+    }
+}
+
+@keyframes ball-2-drive {
+    from {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-60px)
+    }
+    40% {
+        transform: translateY(60px)
+        
+    }
+    60% {
+        transform: translateY(-60px)
+    }
+    80% {
+        transform: translateY(60px)
+    }
+    to {
+      transform: translateY(-60px)
+    }
+}
+@keyframes ball-2 {
+    from {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.5);
+    }
+    40% {
+        transform: scale(1);
+        
+    }
+    60% {
+        transform: scale(1.5);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    to {
+      transform: scale(0.2);
+    }
+}
+
+@keyframes ball-3 {
+    from {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(0.5);
+    }
+    40% {
+        transform: scale(1.5);
+    }
+    60% {
+        transform: scale(0.5);
+    }
+    80% {
+        transform: scale(1.5);
+    }
+    to {
+      transform: scale(0.2);
+    }
+  }
+  @keyframes ball-3-drive {
+    from {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(50px)
+    }
+    40% {
+        transform: translateY(-50px)
+        
+    }
+    60% {
+        transform: translateY(50px)
+    }
+    80% {
+        transform: translateY(-50px)
+    }
+    to {
+      transform: translateY(50px)
+    }
+}
+
+
+@keyframes ball-4-drive {
+    from {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-50px)
+    }
+    40% {
+        transform: translateY(50px)
+        
+    }
+    60% {
+        transform: translateY(-50px)
+    }
+    80% {
+        transform: translateY(50px)
+    }
+    to {
+      transform: translateY(-50px)
+    }
+}
+@keyframes ball-4 {
+    from {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.5);
+    }
+    40% {
+        transform: scale(0.3);
+        
+    }
+    60% {
+        transform: scale(1.5);
+    }
+    80% {
+        transform: scale(0.45);
+    }
+    to {
+      transform: scale(0.2);
+    }
+}
