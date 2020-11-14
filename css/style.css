@@ -14,8 +14,9 @@ body {
 .main-content {
     display: flex;
     justify-content: space-around;
-    padding-top: 200px;
+    align-items: center;
     width: 200px;
+    height: 800px;
     margin: 0 auto;
 }
 
